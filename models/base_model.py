@@ -1,4 +1,11 @@
 #!/usr/bin/python3
-# base_model.py
 
-"""Defines a base model class."""
+'''Defines a base model class.'''
+from datetime import datetime
+import uuid
+
+class BaseModel():
+    pass
+
+def __init__():
+    pass

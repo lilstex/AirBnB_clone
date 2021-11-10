@@ -4,6 +4,7 @@ Command interpreter for AirBnB project
 
 """
 from cmd import Cmd
+import argparse
 
 class MyPrompt(Cmd):
     prompt = '>>> '
@@ -14,6 +15,10 @@ class MyPrompt(Cmd):
         print('Goodbye from the AirBnB CLI');
         return True
 
+    def emptyline(self):
+        '''This method is called when hitting enter so that previous command does not occur'''
+        pass
+
     def default(self, input):
         if input == 'x' or input == 'q':
             return self.do_exit(input)
@@ -21,19 +26,33 @@ class MyPrompt(Cmd):
             print('"{}" : Unknown command. Type "help" or "?" for more information'.format(input))
 
 
-    def do_EOF(self, input):
+    def do_EOF(self, line):
          '''Exit the command interpreter.'''
          print('Goodbye from the AirBnB CLI')
          return True
 
 
-    def do_add(self, type, value):
+    def do_create(self, args):
         '''....................'''
-        self.type = type
-        self.value = value
-
-    def __str__(self):
         pass
+
+    def do_show(self, args):
+        '''.............'''
+        pass
+
+    def do_update(self, args):
+        '''............'''
+        pass
+
+    def do_destroy(self, args):
+        '''...............'''
+        pass
+
+    def do_all(self, args):
+        '''................'''
+        pass
+
+
 
     
 
