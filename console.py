@@ -1,25 +1,31 @@
 #!/usr/bin/python3
+"""
+Command interpreter for AirBnB project
+
+"""
 from cmd import Cmd
 
 class MyPrompt(Cmd):
-    prompt = 'shell> '
-    intro = 'Welcome to shell! Type ? to list commands'
+    prompt = '>>> '
+    intro = ' Welcome to AirBnB CLI!\n Type "?" or "help" to list commands \n Type "exit" or "x" or "q" to exit the CLI'
     
     def do_exit(self, input):
         '''Exit the command interpreter. Shorthand type x or q'''
-        print('Goodbye from the shell');
+        print('Goodbye from the AirBnB CLI');
         return True
 
     def default(self, input):
         if input == 'x' or input == 'q':
             return self.do_exit(input)
+        else:
+            print('"{}" : Unknown command. Type "help" or "?" for more information'.format(input))
 
-        print('Default: {}'.format(input))
 
-    def help_EOF(self):
-        print('Exit the command interpreter using CTRL-D')
+    def do_EOF(self, input):
+         '''Exit the command interpreter.'''
+         print('Goodbye from the AirBnB CLI')
+         return True
 
-    do_EOF = do_exit
 
     def do_add(self, type, value):
         '''....................'''
