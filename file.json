@@ -1,1 +1,1 @@
-{"BaseModel.2e4c0851-7e79-4900-9606-710cd7972253": {"id": "2e4c0851-7e79-4900-9606-710cd7972253", "created_at": "2021-11-11T21:54:31.183601", "updated_at": "2021-11-11T21:54:31.183601", "name": "My_First_Model", "my_number": 89, "__class__": "BaseModel"}}
+{"User.9ed90718-72b7-4838-a5f3-395dfaf1dd4c": {"id": "9ed90718-72b7-4838-a5f3-395dfaf1dd4c", "created_at": "2021-11-11T22:33:48.328923", "updated_at": "2021-11-11T22:33:48.328923", "first_name": "Betty", "last_name": "Bar", "email": "airbnb@mail.com", "password": "root", "__class__": "User"}}
