@@ -3,16 +3,26 @@
 '''Defines a base model class.'''
 from datetime import datetime
 from uuid import uuid4
+import models
 
 class BaseModel():
     '''A blueprint model that defines all other methods /attributes for other classes'''
 
-    def __init__(self, id = str(uuid4()), created_at = datetime.now(), updated_at = datetime.now()):
+    def __init__(self, *args, **kwargs):
         '''Creating an instance of a new basemodel'''
-        self.id = str(uuid4())
-        self.created_at = datetime.now()
-        self.updated_at = datetime.now()
-
+        if kwargs is not None:
+            for key, value in kwargs.items():
+                if key == 'created_at' or key == 'updated_at':
+                    time = datetime.strptime(value, '%b %d %Y %I:%M%p')
+                    setattr(self, key, time)
+                elif key != '__class__':
+                    setattr(self, key, value)
+        else:
+            self.id = str(uuid4())
+            self.created_at = datetime.now()
+            self.updated_at = datetime.now()
+            models.storage.new(self)
+        
     def __str__(self):
         '''Returns the string representation of the instantiated bject'''
         return ('[{}] ({}) {}').format(self.__class__.__name__, self.id, self.__dict__)
@@ -20,6 +30,7 @@ class BaseModel():
     def save(self):
         '''Updates the public instance attribute "updated_at" with the current datetime'''
         self.updated_at = datetime.now()
+        models.storage.save()
 
     def to_dict(self):
         '''Returns a dictionary containing all keys/values of __dict__ of the instance'''
