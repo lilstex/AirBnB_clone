@@ -10,7 +10,7 @@ class BaseModel():
 
     def __init__(self, *args, **kwargs):
         '''Creating an instance of a new basemodel'''
-        if kwargs is not None:
+        if kwargs:
             for key, value in kwargs.items():
                 if key == 'created_at' or key == 'updated_at':
                     time = datetime.strptime(value, '%b %d %Y %I:%M%p')
