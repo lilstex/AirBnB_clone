@@ -1,2 +1,1 @@
-{"User.9ed90718-72b7-4838-a5f3-395dfaf1dd4c": {"id": "9ed90718-72b7-4838-a5f3-395dfaf1dd4c", "created_at": "2021-11-11T22:33:48.328923", "updated_at": "2021-11-11T22:33:48.328923", "first_name": "Betty", "last_name": "Bar", "email": "airbnb@mail.com", "password": "root", "__class__": "User"}}
-
+{"Place.166909bb-0426-485d-b504-31fa98e677fe": {"id": "166909bb-0426-485d-b504-31fa98e677fe", "created_at": "2021-11-12T22:20:09.520487", "updated_at": "2021-11-12T22:20:09.520487", "__class__": "Place"}}
