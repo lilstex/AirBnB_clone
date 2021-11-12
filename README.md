@@ -277,10 +277,13 @@ create: create [ARG] [PARAM 1] [PARAM 2] ...
   
 
 
-  * **update with dictionary:** `<class name>.update(<id>,
-  
-    <dictionary representation>)`
+  * **update with dictionary:** `<class name>.update(<id>, <dictionary representation>)`
     
 
 
 ---
+
+## AUTHORS
+
+* Emmanuel Chisom, [lilstex](https://github.com/lilstex)
+* Sonkay Conteh, [SonkayAugustine](https://github.com/SonkayAugustine)
