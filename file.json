@@ -1,1 +1,1 @@
-{"BaseModel.73739963-c7ca-41aa-9a38-a311e822e813": {"id": "73739963-c7ca-41aa-9a38-a311e822e813", "created_at": "2021-11-12T14:38:28.365988", "updated_at": "2021-11-12T14:38:28.365988", "name": "My_First_Model", "my_number": 89, "__class__": "BaseModel"}}
+{"Place.166909bb-0426-485d-b504-31fa98e677fe": {"id": "166909bb-0426-485d-b504-31fa98e677fe", "created_at": "2021-11-12T22:20:09.520487", "updated_at": "2021-11-12T22:20:09.520487", "__class__": "Place"}}
