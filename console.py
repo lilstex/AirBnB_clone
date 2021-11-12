@@ -4,6 +4,7 @@ Command interpreter for AirBnB project
 
 """
 import cmd
+<<<<<<< HEAD
 import json
 import re
 import models
@@ -21,6 +22,20 @@ class HBNBCommand(cmd.Cmd):
     prompt = '(hbnb)'
     instances = ['BaseModel', 'User', 'State', 'City',
                  'Amenity', 'Place', 'Review']
+=======
+from models import storage
+from models.base_model import BaseModel
+from models.user import User
+from models.amenity import Amenity
+from models.place import Place
+from models.review import Review
+from models.state import State
+from models.city import City
+
+class HBNBCommand(cmd.Cmd):
+    prompt = '(hbnb) '
+    intro = ' Welcome to AirBnB CLI!\n Type "?" or "help" to list commands \n Type "quit" or "x" or "q" to exit the CLI'
+>>>>>>> 214c008bf49cc94f1eea8702c544d14272b6eea5
     
     def do_quit(self, input):
         '''Exit the command interpreter. Shorthand type x or q'''
@@ -28,12 +43,12 @@ class HBNBCommand(cmd.Cmd):
         return True
 
     def emptyline(self):
-        '''This method is called when hitting enter so that previous command does not occur'''
+        '''This method is called when an empty line + ENTER is pressed, to prevent execution of previous commands'''
         pass
 
     def default(self, input):
         if input == 'x' or input == 'q':
-            return self.do_exit(input)
+            return self.do_quit(input)
         else:
             print('"{}" : Unknown command. Type "help" or "?" for more information'.format(input))
 
@@ -160,4 +175,8 @@ class HBNBCommand(cmd.Cmd):
 
 
 if __name__ == '__main__':
+<<<<<<< HEAD
     HBNBCommand().cmdloop()
+=======
+    HBNBCommand().cmdloop()
+>>>>>>> 214c008bf49cc94f1eea8702c544d14272b6eea5
