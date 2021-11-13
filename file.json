@@ -1,1 +1,1 @@
-{"Place.166909bb-0426-485d-b504-31fa98e677fe": {"id": "166909bb-0426-485d-b504-31fa98e677fe", "created_at": "2021-11-12T22:20:09.520487", "updated_at": "2021-11-12T22:20:09.520487", "__class__": "Place"}}
+{"BaseModel.e83461af-dfea-4972-946d-27ffef1ccbc1": {"id": "e83461af-dfea-4972-946d-27ffef1ccbc1", "created_at": "2021-11-13T23:38:57.267641", "updated_at": "2021-11-13T23:38:57.267641", "name": "My_First_Model", "my_number": 89, "__class__": "BaseModel"}}
