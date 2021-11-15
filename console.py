@@ -17,7 +17,7 @@ class HBNBCommand(cmd.Cmd):
     prompt = '(hbnb) '
     class_types = ['Basemodel', 'User', 'Amenity', 'Place', 'Review', 'State', 'City']
     intro = ' Welcome to AirBnB CLI!\n Type "?" or "help" to list commands \n Type "quit" or "x" or "q" to exit the CLI'
-    
+
     def do_quit(self, input):
         '''Exit the command interpreter. Shorthand type x or q'''
         print('Goodbye from the AirBnB CLI');
@@ -152,6 +152,125 @@ class HBNBCommand(cmd.Cmd):
                         print(list_instan)
             else:
                 print("** class doesn't exist**") 
+
+    def do_User(self, arg):
+        '''Pass'''
+
+        CMD_MATCH = {
+            '.all()': self.do_all,
+            # 'count()': self.__count,
+            '.show()': self.do_show,
+            '.destroy()': self.do_destroy,
+            '.update()': self.do_update,
+            '.create()': self.do_create
+        }
+
+        if '(' and ')' in arg:
+            for key, value in CMD_MATCH.items():
+                if key == arg:
+                    value('User')    
+
+    def do_Amenity(self, arg):
+        '''Pass'''
+
+        CMD_MATCH = {
+            '.all()': self.do_all,
+            # 'count()': self.__count,
+            '.show()': self.do_show,
+            '.destroy()': self.do_destroy,
+            '.update()': self.do_update,
+            '.create()': self.do_create
+        }
+
+        if '(' and ')' in arg:
+            for key, value in CMD_MATCH.items():
+                if key == arg:
+                    value('Amenity')    
+
+    def do_City(self, arg):
+        '''Pass'''
+
+        CMD_MATCH = {
+            '.all()': self.do_all,
+            # 'count()': self.__count,
+            '.show()': self.do_show,
+            '.destroy()': self.do_destroy,
+            '.update()': self.do_update,
+            '.create()': self.do_create
+        }
+
+        if '(' and ')' in arg:
+            for key, value in CMD_MATCH.items():
+                if key == arg:
+                    value('City')    
+
+    def do_Place(self, arg):
+        '''Pass'''
+
+        CMD_MATCH = {
+            '.all()': self.do_all,
+            # 'count()': self.__count,
+            '.show()': self.do_show,
+            '.destroy()': self.do_destroy,
+            '.update()': self.do_update,
+            '.create()': self.do_create
+        }
+
+        if '(' and ')' in arg:
+            for key, value in CMD_MATCH.items():
+                if key == arg:
+                    value('Place')    
+    
+    def do_Review(self, arg):
+        '''Pass'''
+
+        CMD_MATCH = {
+            '.all()': self.do_all,
+            # 'count()': self.__count,
+            '.show()': self.do_show,
+            '.destroy()': self.do_destroy,
+            '.update()': self.do_update,
+            '.create()': self.do_create
+        }
+
+        if '(' and ')' in arg:
+            for key, value in CMD_MATCH.items():
+                if key == arg:
+                    value('Review')    
+
+    def do_State(self, arg):
+        '''Pass'''
+
+        CMD_MATCH = {
+            '.all()': self.do_all,
+            # 'count()': self.__count,
+            '.show()': self.do_show,
+            '.destroy()': self.do_destroy,
+            '.update()': self.do_update,
+            '.create()': self.do_create
+        }
+
+        if '(' and ')' in arg:
+            for key, value in CMD_MATCH.items():
+                if key == arg:
+                    value('State')    
+
+    def do_BaseModel(self, arg):
+        '''Pass'''
+
+        CMD_MATCH = {
+            '.all()': self.do_all,
+            # 'count()': self.__count,
+            '.show()': self.do_show,
+            '.destroy()': self.do_destroy,
+            '.update()': self.do_update,
+            '.create()': self.do_create
+        }
+
+        if '(' and ')' in arg:
+            for key, value in CMD_MATCH.items():
+                if key == arg:
+                    value('BaseModel')    
 
 
 

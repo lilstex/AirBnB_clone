@@ -34,9 +34,15 @@ class FileStorage():
 
     def reload(self):
         '''Deserializes the JSON file to __objects (only if the JSON file (__file_path) exists'''
+        class_types = {'Basemodel': BaseModel, 'User': User, 'Amenity': Amenity, 'Place': Place, 'Review': Review, 'State': State, 'City': City}
+
         try:
             with open(FileStorage.__file_path, mode='r', encoding='utf-8') as file_object:
                 my_dict = load(file_object)
+                for key in my_dict.keys():
+                    for Class, instance in class_types.items():
+                        if my_dict[key]['__class__'] == Class:
+                            FileStorage.__objects[key] = ((instance)(**my_dict[key]))
         except: 
             return
         
