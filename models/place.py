@@ -4,7 +4,7 @@
 from models.base_model import BaseModel
 
 class Place(BaseModel):
-    '''Pass'''
+    '''This class takes care of all matters relating to place in the application'''
     name = ''
     city_id = ''
     user_id = ''
@@ -15,5 +15,6 @@ class Place(BaseModel):
     price_by_night = 0
     latitude = float(0.0)
     amenity_ids = []
+    count = 0
     
 

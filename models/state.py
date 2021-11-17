@@ -4,6 +4,7 @@
 from models.base_model import BaseModel
 
 class State(BaseModel):
-    '''Pass'''
+    '''This class takes care of all the state related matters of the application'''
     name = ''
+    count = 0
 

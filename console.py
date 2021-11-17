@@ -272,6 +272,10 @@ class HBNBCommand(cmd.Cmd):
                 if key == arg:
                     value('BaseModel')    
 
+    def do__count(self, cls, arg):
+        new_arg = arg.split('.')
+        if new_arg == 'count()':
+            cls.count()
 
 
 if __name__ == '__main__':

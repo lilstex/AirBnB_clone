@@ -4,8 +4,9 @@
 from models.base_model import BaseModel
 
 class Review(BaseModel):
-    '''Pass'''
+    '''This class takes care of all application reviews'''
     place_id = ''
     user_id = ''
     text = ''
+    count = 0
 
