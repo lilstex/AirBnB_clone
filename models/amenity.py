@@ -4,6 +4,7 @@
 from models.base_model import BaseModel
 
 class Amenity(BaseModel):
-    '''Pass'''
+    '''This class takes care of all application amenities'''
     name = ''
-
+    count = 0
+   

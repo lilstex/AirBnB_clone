@@ -4,7 +4,8 @@
 from models.base_model import BaseModel
 
 class City(BaseModel):
-    '''Pass'''
+    '''This class takes care of all city related matters of the application'''
     state_id = ''
     name = ''
+    count = 0
 
