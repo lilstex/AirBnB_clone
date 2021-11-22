@@ -1,0 +1,28 @@
+section.places {
+    height: 70px;
+    width: 100%;
+}
+section.places h1 {
+    font-size: 30px;
+    text-align: left;
+}
+section.places article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+article div.houses {
+    width: 390px;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 4px;
+    border: 1px solid #ff5a5f;
+
+}
+article div.houses h2 {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}

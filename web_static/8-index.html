@@ -4,71 +4,138 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>AirBnB</title>
+    <link rel="stylesheet" href="styles/4-common.css">
+    <link rel="stylesheet" href="styles/3-header.css">
+    <link rel="stylesheet" href="styles/3-footer.css">
+    <link rel="stylesheet" href="styles/6-filters.css">
+    <link rel="stylesheet" href="styles/8-places.css">
+    <link rel="icon" href="images/icon.png">
+    <link rel="icon" href="images/icon_bath.png">
+    <link rel="icon" href="images/icon_bed.png">
+    <link rel="icon" href="images/icon_group.png">
 </head>
 <body>
-    <p>
-        Write an HTML page that displays a header, a footer, a filter box (dropdown list) and the result of the search.
+    <header></header>
+    <div class="container">
+        <section class="filters">
+            <div class="locations">
+                <h3>States</h3>
+                <h4>California, Arizona</h4>
+                <ul class="popover">
+                    <li>
+                        <h2>Arizona:</h2>
+                        <ul>
+                            <li>City 1</li>
+                            <li>City 2</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h2>California:</h2>
+                        <ul>
+                            <li>City 1</li>
+                            <li>City 2</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="amenities">
+                <h3>Amenities</h3>
+                <h4>Bedroom, washing machine</h4>
+                <ul class="popover">
+                    <li>Kitchen</li>
+                    <li>TV</li>
+                    <li>Internet</li>
+                    <li>Washing machine</li>
+                </ul>
+            </div>
+            <button>Search</button>
+        </section>
+        <section class="places">
+            <h1>Places</h1>
+            <article>
+                <div class="houses">
+                    <h2>Massive House</h2>
+                    <div class="price_by_night">
+                        <p>$125</p>
+                    </div>
+                    <div class="information">
+                        <div class="max_guest">
+                            <p>3 Guests</p>
+                        </div>
+                        <div class="number_rooms">
+                            <p>2 Bedrooms</p>
+                        </div>
+                        <div class="number_bathrooms">
+                            <p>2 Bathrooms</p>
+                        </div>
+                    </div>
+                    <div class="user">
+                        <p><strong>Owner: </strong> Name of owner</p>
+                    </div>
+                    <div class="description">
+                        <p>Description of the place should be here</p>
+                    </div>
+                </div>
 
-Layout: (based on 7-index.html)
+                <div class="houses">
+                    <h2>Club House</h2>
+                    <div class="price_by_night">
+                        <p>$85</p>
+                    </div>
+                    <div class="information">
+                        <div class="max_guest"></div>
+                        <div class="number_rooms"></div>
+                        <div class="number_bathrooms"></div>
+                    </div>
+                    <div class="user">
+                        <p><strong>Owner: </strong> Name of owner</p>
+                    </div>
+                    <div class="description">
+                        <p>Description of the place should be here</p>
+                    </div>
+                </div>
 
-Add more information to a Place article:
+                <div class="houses">
+                    <h2>Suites</h2>
+                    <div class="price_by_night">
+                        <p>$125</p>
+                    </div>
+                    <div class="information">
+                        <div class="max_guest"></div>
+                        <div class="number_rooms"></div>
+                        <div class="number_bathrooms"></div>
+                    </div>
+                    <div class="user">
+                        <p><strong>Owner: </strong> Name of owner</p>
+                    </div>
+                    <div class="description">
+                        <p>Description of the place should be here</p>
+                    </div>
+                </div>
 
-Price by night:
-tag: div
-classname: price_by_night
-same level as the place name
-font color: #FF5A5F
-border: #FF5A5F 4px rounded
-min width: 60px
-height: 60px
-font size: 30px
-align: the top right (with space)
-Information section:
-tag: div
-classname: information
-height: 80px
-border: top and bottom #DDDDDD 1px
-contains (align vertically):
-Number of guests:
-tag: div
-classname: max_guest
-width: 100px
-fake text
-icon
-Number of bedrooms:
-tag: div
-classname: number_rooms
-width: 100px
-fake text
-icon
-Number of bathrooms:
-tag: div
-classname: number_bathrooms
-width: 100px
-fake text
-icon
-User section:
-tag: div
-classname: user
-text Owner: <fake text>
-Owner text should be in bold
-Description section:
-tag: div
-classname: description
-Requirements:
-
-You must use: header, footer, section, article, button, h1, h2, h3, h4, ul, li tags
-No inline style
-You are not allowed to use the img tag
-You are not allowed to use the style tag in the head tag
-All images must be stored in the images folder
-You must have 5 CSS files:
-styles/4-common.css: for the global style (i.e. body and .container styles)
-styles/3-header.css: for the header style
-styles/3-footer.css: for the footer style
-styles/6-filters.css: for the filters style
-styles/8-places.css: for the places style
-    </p>
+                <div class="houses">
+                    <h2>Luxury</h2>
+                    <div class="price_by_night">
+                        <p>$175</p>
+                    </div>
+                    <div class="information">
+                        <div class="max_guest"></div>
+                        <div class="number_rooms"></div>
+                        <div class="number_bathrooms"></div>
+                    </div>
+                    <div class="user">
+                        <p><strong>Owner: </strong> Name of owner</p>
+                    </div>
+                    <div class="description">
+                        <p>Description of the place should be here</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </div>
+    <footer>
+        Best School
+    </footer>
 </body>
 </html>
