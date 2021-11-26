@@ -1,0 +1,16 @@
+header {
+    background-image: url(../images/icon.png);
+    margin-left: 20px; 
+    height:70px; 
+    width:100%;
+    color: white;
+    border-bottom: 1px solid #cccccc;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 800px) {
+    header { 
+        width: 90%;
+        margin-left: 27px;
+    }
+}
